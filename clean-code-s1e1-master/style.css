@@ -35,7 +35,7 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -96,7 +96,7 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+input:focus {
     color: #333;
 }
 
@@ -106,7 +106,7 @@ label[for="new-task"] {
     margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
     width: 318px;
 }
 
@@ -124,7 +124,7 @@ li>* {
     vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+input[type="checkbox"] {
     margin: 0 10px;
 }
 
@@ -135,35 +135,36 @@ li>label {
     width: 226px;
 }
 
-li>input[type="text"] {
-    width: 226px
+input[type="text"] {
+    width: 226px;
 }
 
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.delete img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
-    text-decoration: line-through color: #888;
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-    display: none
+    display: none;
 }
 
-ul li.editMode input[type=text] {
+.editMode input[type=text] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
-ul li.editMode label {
+.editMode label {
     display: none;
 }
